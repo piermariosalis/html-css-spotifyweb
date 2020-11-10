@@ -1,171 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Spotify clone</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <title>Spotify clone</title>
 </head>
+
 <body>
-    <div class="wrapper d-flex">
-        <main id="site_content" class="d-flex">
-            <aside class="main_menu d-flex">
-                <div>
-                    <img id="logo" src="img/logo.svg" alt="">
-                    <div class="div d-flex">
-                        <img class="aside_icons" src="img/home.svg" alt="">
-                        <a href="">Home</a>
-                    </div>
-                    <div class="div d-flex">
-                        <img class="aside_icons" src="img/search.svg" alt="">
-                        <a href="">Home</a>
-                    </div>
-                    <div class="div d-flex">
-                        <img class="aside_icons" src="img/libreria.svg" alt="">
-                        <a href="">Home</a>
-                    </div>
-                </div>
+  <div class="wrapper d-flex">
+    <main id="site_content" class="d-flex">
 
 
-            </aside>
-            <section class="covers_section ">
-                <div class="subscribe_banner d-flex">
-                    <button>PASSA A PREMIUM</button>
-                </div>
-
-                <nav class="center">
-                     <div class="container_nav">
-                        <a href="#">IN EVIDENZA</a>
-                        <a href="#">PODCAST</a>
-                        <a href="#">CLASSIFICHE</a>
-                        <a href="#">GENERI E MOD</a>
-                        <a href="#">NUOVE USCITE</a>
-                        <a href="#">SCOPRI</a>
-                     </div>
-
-                </nav>
-                <h2>Recently played</h2>
-                <div id="recently_played" class="d-flex flex-wrap">
-                    <div class="item">
-                        <img class="d-flex flex-wrap" src="img/metal_lifting.jpg" alt="">
-                        <strong>Music</strong>
-                        <p>Lorem</p>
-                    </div>
-                    <div class="item">
-                        <img class="d-flex flex-wrap" src="img/metal_lifting.jpg" alt="">
-                        <strong>Music</strong>
-                        <p>Lorem</p>
-                    </div>
-                    <div class="item">
-                        <img class="d-flex flex-wrap" src="img/metal_lifting.jpg" alt="">
-                        <strong>Music</strong>
-                        <p>Lorem</p>
-                    </div>
-                    <div class="item">
-                        <img class="d-flex flex-wrap" src="img/metal_lifting.jpg" alt="">
-                        <strong>Music</strong>
-                        <p>Lorem</p>
-                    </div>
-                    <div class="item">
-                        <img class="d-flex flex-wrap" src="img/metal_lifting.jpg" alt="">
-                        <strong>Music</strong>
-                        <p>Lorem</p>
-                    </div>
-                    <div class="item">
-                        <img class="d-flex flex-wrap" src="img/metal_lifting.jpg" alt="">
-                        <strong>Music</strong>
-                        <p>Lorem</p>
-                    </div>
+      <aside class="main_menu d-flex">
 
 
-
-                </div>
-                <h2>Creato per John Doe</h2>
-                <div id="created_for" class="d-flex flex-wrap">
-                    <div class="item">
-                        <img src="img/metal_lifting.jpg" alt="">
-                        <strong>Release Radar</strong>
-                    </div>
-                    <div class="item">
-                        <img src="img/metal_lifting.jpg" alt="">
-                        <strong>Daily Mix 1</strong>
-                    </div>
-                    <div class="item">
-                    </div>
-                    <div class="item">
-                    </div>
-                    <div class="item">
-                    </div>
-                    <div class="item">
-                    </div>
-
-
-                </div>
-                <h2>Artisti più popolari</h2>
-                <div id="popular" class="d-flex flex-wrap">
-                    <div class="item">
-                        <img src="img/metal_lifting.jpg" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="img/metal_lifting.jpg" alt="">
-                    </div>
-                </div>
-
-
-            </section>
-        </main>
-
-          <footer id="site_footer" class="container d-flex">
-  <div class="sinister d-flex">
-    <img src="img/copertina.jpg" alt="">
-    <div class="titolo d-flex">
-      <h2>Mercy Street</h2>
-      <p>Peter Gabriel</p>
-    </div>
-    <i class="fa fa-heart"></i>
-    <i class="fa fa-folder"></i>
-
-  </div>
-
-  <div class="center d-flex">
-    <i class="fa fa-random"></i>
-    <i class="fa fa-step-backward"></i>
-    <i class="play fa fa-play-circle"></i>
-    <i class="fa fa-step-forward"></i>
-    <i class="fa fa-repeat"></i>
-    <div class="barra d-flex">
-      <p>4:56</p>
-      <div id="audio-player-container_long">
-        <div class="audio-progress" id="audio-progress">
-          <div id="draggable-point">
+        <div class="bar d-flex">
+          <div class="logo">
+            <img src="img/Spotify_Logo_CMYK_White.png" alt="">
           </div>
-          <div id="audio-progress-bar" class="bar">
+          <div class="home">
+            <img src="img/home.svg" alt="">
+          </div>
+          <div class="cerca">
+            <img src="img/search.svg" alt="">
+          </div>
+          <div class="libreria">
+            <img src="img/libreria.svg" alt="">
+          </div>
+
+          <div class="playlist">
+            <h2>PLAYLIST</h2>
+            <img src="img/plus-square-1179806.png" alt="">
+          </div>
+          <div class="create_playlist">
+            <a href="">Nome Playlist</a>
+            <a href="">Nome Playlist</a>
+            <a href="">Nome Playlist</a>
+            <a href="">Nome Playlist</a>
+            <a href="">Nome Playlist</a>
+            <a href="">Nome Playlist</a>
+            <a href="">Nome Playlist</a>
+          </div>
+        </div>
+
+        <div class="install_app">
+          <div class="install_button d-flex">
+            <i class="fal fa-arrow-circle-down"></i>
+            <p>Install app</p>
+          </div>
+
+        </div>
+        <div class="profile">
+          <div class="image_profile d-flex">
+            <img src="img/profile.svg" alt="">
+            <h2>John Doe</h2>
+          </div>
+
+        </div>
+
+
+      </aside>
+      <!-- <section class="covers_section ">
+        <div class="subscribe_banner d-flex">
+          <button>PASSA A PREMIUM</button>
+        </div>
+
+        <nav class="center">
+          <div class="container_nav">
+            <a href="#">IN EVIDENZA</a>
+            <a href="#">PODCAST</a>
+            <a href="#">CLASSIFICHE</a>
+            <a href="#">GENERI E MOD</a>
+            <a href="#">NUOVE USCITE</a>
+            <a href="#">SCOPRI</a>
+          </div>
+
+        </nav>
+        <h2>Recently played</h2>
+        <div id="recently_played" class="d-flex flex-wrap">
+          <div class="item">
+            <img class="d-flex flex-wrap" src="img/metal_lifting.jpg" alt="">
+            <strong>Music</strong>
+            <p>Lorem</p>
+          </div>
+          <div class="item">
+            <img class="d-flex flex-wrap" src="img/metal_lifting.jpg" alt="">
+            <strong>Music</strong>
+            <p>Lorem</p>
+          </div>
+          <div class="item">
+            <img class="d-flex flex-wrap" src="img/metal_lifting.jpg" alt="">
+            <strong>Music</strong>
+            <p>Lorem</p>
+          </div>
+          <div class="item">
+            <img class="d-flex flex-wrap" src="img/metal_lifting.jpg" alt="">
+            <strong>Music</strong>
+            <p>Lorem</p>
+          </div>
+          <div class="item">
+            <img class="d-flex flex-wrap" src="img/metal_lifting.jpg" alt="">
+            <strong>Music</strong>
+            <p>Lorem</p>
+          </div>
+          <div class="item">
+            <img class="d-flex flex-wrap" src="img/metal_lifting.jpg" alt="">
+            <strong>Music</strong>
+            <p>Lorem</p>
+          </div>
+
+
+
+        </div>
+        <h2>Creato per John Doe</h2>
+        <div id="created_for" class="d-flex flex-wrap">
+          <div class="item">
+            <img src="img/metal_lifting.jpg" alt="">
+            <strong>Release Radar</strong>
+          </div>
+          <div class="item">
+            <img src="img/metal_lifting.jpg" alt="">
+            <strong>Daily Mix 1</strong>
+          </div>
+          <div class="item">
+          </div>
+          <div class="item">
+          </div>
+          <div class="item">
+          </div>
+          <div class="item">
+          </div>
+
+
+        </div>
+        <h2>Artisti più popolari</h2>
+        <div id="popular" class="d-flex flex-wrap">
+          <div class="item">
+            <img src="img/metal_lifting.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="img/metal_lifting.jpg" alt="">
+          </div>
+        </div>
+
+
+      </section> -->
+    </main>
+
+    <footer id="site_footer" class="container d-flex">
+      <div class="sinister d-flex">
+        <img src="img/copertina.jpg" alt="">
+        <div class="titolo d-flex">
+          <h2>Mercy Street</h2>
+          <p>Peter Gabriel</p>
+        </div>
+        <i class="fa fa-heart"></i>
+        <i class="fa fa-folder"></i>
+
+      </div>
+
+      <div class="center d-flex">
+        <i class="fa fa-random"></i>
+        <i class="fa fa-step-backward"></i>
+        <i class="play fa fa-play-circle"></i>
+        <i class="fa fa-step-forward"></i>
+        <i class="fa fa-repeat"></i>
+        <div class="barra d-flex">
+          <p>4:56</p>
+          <div id="audio-player-container_long">
+            <div class="audio-progress" id="audio-progress">
+              <div id="draggable-point">
+              </div>
+              <div id="audio-progress-bar" class="bar">
+              </div>
+            </div>
+          </div>
+          <p>6:17</p>
+        </div>
+      </div>
+
+      <div class="dester d-flex">
+        <i class="fa fa-compress" aria-hidden="true"></i>
+
+
+        <i class="fa fa-desktop"></i>
+        <i class="fa fa-volume-up"></i>
+        <div id="audio-player-container">
+          <div class="audio-progress" id="audio-progress">
+            <div id="draggable-point">
+            </div>
+            <div id="audio-progress-bar" class="bar">
+            </div>
           </div>
         </div>
       </div>
-      <p>6:17</p>
-    </div>
+    </footer>
+
   </div>
-
-  <div class="dester d-flex">
-    <i class="fa fa-compress" aria-hidden="true"></i>
-
-
-    <i class="fa fa-desktop"></i>
-    <i class="fa fa-volume-up"></i>
-    <div id="audio-player-container">
-      <div class="audio-progress" id="audio-progress">
-        <div id="draggable-point">
-        </div>
-        <div id="audio-progress-bar" class="bar">
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-    </div>
 
 </body>
+
 </html>
