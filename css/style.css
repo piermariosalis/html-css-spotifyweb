@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Utility classes */
@@ -30,13 +31,15 @@ body {
 }
 
 #site_content {
-  height: calc(100% - 80px);
-  flex-direction: column;
+  height: calc(100% - 90px);
+  flex-direction: row;
 }
 
 aside.main_menu {
   width: 232px;
   height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
   background-color: black;
   flex-direction: column;
 }
@@ -66,12 +69,21 @@ aside.main_menu {
 .covers_section {
   background-color: #141922;
   padding: 20px;
-  
+  flex-direction: row;
   overflow-y: auto;
   overflow-x: hidden;
   padding-top: 60px;
-  /* margin-top: 60px; */
   width: calc(100% - 232px);
+}
+
+.covers_section h2 {
+  margin-bottom: 20px;
+}
+
+.covers_section #subtitle {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: darkgrey;
 }
 
 .subscribe_banner {
@@ -86,38 +98,58 @@ aside.main_menu {
 
 .subscribe_banner button {
   width: 200px;
-  height: 50%;
+  height: 70%;
   color: white;
   text-align: center;
   align-self: center;
-  border-radius: 10px;
-  logo
+  border: 1px solid white;
+  border-radius: 20px;
+  background: transparent;
+  margin-right: 25px;
+}
+
+.top {
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .container_nav {
-  width: 100%;
+  margin: 10px;
   margin-bottom: 40px;
   font-size: 12px;
-  text-align: center;
+}
+
+.container_nav.uno {
+  border-bottom: 3px solid yellow;
 }
 
 .container_nav a {
   color: darkgrey;
+  align-self: center;
 }
 
 /* Covers section */
 #recently_played, #created_for, #popular {
-  justify-content: space-alogo round;
+  margin-bottom: 40px;
 }
 
 .item {
   text-align: center;
   width: 200px;
+  margin-right: 25px;
 }
 
 .item img {
   width: 100%;
   height: 200px;
+  margin-bottom: 20px;
+}
+
+.item p {
+  color: darkgrey;
+  font-size: 11px;
+  margin-top: 10px;
 }
 
 #popular img {
@@ -127,7 +159,7 @@ aside.main_menu {
 /* Footer */
 .container {
   width: 100%;
-  height: 80px;
+  height: 90px;
   background: #282828;
 }
 
@@ -275,6 +307,10 @@ aside.main_menu {
   width: 100%;
   height: 100%;
   flex-direction: column;
+}
+
+.bar strong {
+  color: darkgrey;
 }
 
 .logo, .cerca, .libreria {
